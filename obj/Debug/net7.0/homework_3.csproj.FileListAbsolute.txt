@@ -1,0 +1,15 @@
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/bin/Debug/net7.0/homework_3
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/bin/Debug/net7.0/homework_3.deps.json
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/bin/Debug/net7.0/homework_3.runtimeconfig.json
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/bin/Debug/net7.0/homework_3.dll
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/bin/Debug/net7.0/homework_3.pdb
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.csproj.AssemblyReference.cache
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.AssemblyInfoInputs.cache
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.AssemblyInfo.cs
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.csproj.CoreCompileInputs.cache
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.dll
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/refint/homework_3.dll
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.pdb
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/homework_3.genruntimeconfig.cache
+/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GB_c#/homework_3/obj/Debug/net7.0/ref/homework_3.dll
