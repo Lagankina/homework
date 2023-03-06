@@ -360,3 +360,10 @@ FodyWeavers.xsd
 # JetBrains Rider
 
 *.sln.iml
+
+
+bin/
+        
+homework.csproj
+
+obj/
