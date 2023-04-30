@@ -1,0 +1,15 @@
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.csproj.AssemblyReference.cache
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.GeneratedMSBuildEditorConfig.editorconfig
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.AssemblyInfoInputs.cache
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.AssemblyInfo.cs
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.csproj.CoreCompileInputs.cache
+/home/adel/GitAdel/C#/homework/bin/Debug/net6.0/homework
+/home/adel/GitAdel/C#/homework/bin/Debug/net6.0/homework.deps.json
+/home/adel/GitAdel/C#/homework/bin/Debug/net6.0/homework.runtimeconfig.json
+/home/adel/GitAdel/C#/homework/bin/Debug/net6.0/homework.dll
+/home/adel/GitAdel/C#/homework/bin/Debug/net6.0/ref/homework.dll
+/home/adel/GitAdel/C#/homework/bin/Debug/net6.0/homework.pdb
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.dll
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/ref/homework.dll
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.pdb
+/home/adel/GitAdel/C#/homework/obj/Debug/net6.0/homework.genruntimeconfig.cache

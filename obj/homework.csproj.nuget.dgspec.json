@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GeekBrains/C#/homework/homework.csproj": {}
+    "/home/adel/GitAdel/C#/homework/homework.csproj": {}
   },
   "projects": {
-    "/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GeekBrains/C#/homework/homework.csproj": {
+    "/home/adel/GitAdel/C#/homework/homework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GeekBrains/C#/homework/homework.csproj",
+        "projectUniqueName": "/home/adel/GitAdel/C#/homework/homework.csproj",
         "projectName": "homework",
-        "projectPath": "/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GeekBrains/C#/homework/homework.csproj",
-        "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/.yandex.disk/667333140/Yandex.Disk.localized/repo/KisyA/GeekBrains/C#/homework/obj/",
+        "projectPath": "/home/adel/GitAdel/C#/homework/homework.csproj",
+        "packagesPath": "/home/adel/.nuget/packages/",
+        "outputPath": "/home/adel/GitAdel/C#/homework/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/macbook/.nuget/NuGet/NuGet.Config"
+          "/home/adel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -35,16 +35,15 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -53,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.112/RuntimeIdentifierGraph.json"
         }
       }
     }
