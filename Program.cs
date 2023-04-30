@@ -348,11 +348,46 @@
 // }
 // Console.WriteLine("Элементов в отрезке: " + countMass);
 
+//Домашняя работа к семинару 6//
+//Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+//0, 7, 8, -2, -2 -> 2
+
+//НЕ СДЕЛАНА////////
+
+Console.WriteLine("Введите числа: ");
+int number = int.Parse(Console.ReadLine());
+int numberSize = 0;
+for(int i = 0; i < number; i++)
+{
+while(number != numberSize)
+{
+    Console.ReadLine();
+}
+}
 
 
 
+// Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями  
+//значения b1, k1, b2 и k2 задаются пользователем.
 
+// Console.WriteLine("Введите k1: ");
+// int k1 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите b1: ");
+// int b1 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите k2: ");
+// int k2 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите b2: ");
+// int b2 = int.Parse(Console.ReadLine());
+// Console.WriteLine();
 
+// double kx = k1 - k2;
+// double bx = b2 - b1;
+// double x = bx / kx;
+
+// double y = k1 * x + b1;
+// Console.WriteLine("точка x: " + x);
+
+// Console.WriteLine("точка пересечения: " + (x, y));
 
 
 
