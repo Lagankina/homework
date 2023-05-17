@@ -412,3 +412,97 @@
 //     Console.WriteLine();
 
 // }
+//ДОМАШНЕ ЗАДАНИЕ СЕМИНАР 7//
+// Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами от -10,0 до 10,0.
+
+// Console.WriteLine("Введите ширину таблицы: ");
+// int m = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите длину таблицы: ");
+// int n = int.Parse(Console.ReadLine());
+// Console.WriteLine();
+
+// double[,] myArrayTab = new double[m, n];
+// for(int i = 0; i < myArrayTab.GetLength(0); i++)
+// {
+//     for(int j = 0; j < myArrayTab.GetLength(1); j++)
+//     {
+//         myArrayTab[i,j] = new Random().Next(-10, 11) + new Random().NextDouble();
+//         myArrayTab[i,j] = Math.Round(myArrayTab[i,j], 2);
+//         Console.Write(" |" + myArrayTab[i, j] + "|"); 
+//     }
+//     Console.WriteLine();
+// }
+
+//Задача 50. Напишите программу, которая на вход принимает число, и возвращает индексы числа в двумерном массиве или же указание, что такого элемента нет.
+
+// Console.WriteLine("Введите ширину таблицы: ");
+// int m = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите длину таблицы: ");
+// int n = int.Parse(Console.ReadLine());
+// Console.WriteLine();
+// int count = 0;
+
+// int[,] myArrayTab = new int[m, n];
+// for(int i = 0; i < myArrayTab.GetLength(0); i++)
+// {
+//     for(int j = 0; j < myArrayTab.GetLength(1); j++)
+//     {
+//         myArrayTab[i,j] = new Random().Next(0, 100);
+//         Console.Write(" |" + myArrayTab[i, j] + "|"); 
+
+//     }
+//     Console.WriteLine();
+// }
+// Console.WriteLine();
+
+// Console.WriteLine("Введите число: ");
+// int number = int.Parse(Console.ReadLine());
+
+// for(int i = 0; i < myArrayTab.GetLength(0); i++)
+// {
+//     for(int j = 0; j < myArrayTab.GetLength(1); j++)
+//     {
+//         if(number == myArrayTab[i,j])
+//         {
+//             count++;
+//         } 
+//     }    
+// }
+// if(count > 0) { Console.WriteLine("Число присутствует в массиве"); }
+// else { Console.WriteLine("Нет таких чисел"); }
+
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+Console.WriteLine("Введите количество столбцов: ");
+int columns = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите количество строк: ");
+int lines = int.Parse(Console.ReadLine());
+Console.WriteLine();
+
+float[] sums = new float[columns];
+int[,] myArrayTab = new int[lines, columns];
+
+for(int rowIndex = 0; rowIndex < myArrayTab.GetLength(0); rowIndex++)
+{
+    Console.Write("| "); 
+    for(int columnIndex = 0; columnIndex < myArrayTab.GetLength(1); columnIndex++)
+    {
+        myArrayTab[rowIndex, columnIndex] = new Random().Next(0, 10);
+        sums[columnIndex] += myArrayTab[rowIndex, columnIndex];
+        Console.Write(myArrayTab[rowIndex, columnIndex] + " "); 
+    }
+    Console.WriteLine("|");
+}
+Console.WriteLine();
+
+for(int index = 0; index < sums.Length; index++)
+{
+    Console.Write(" | " + sums[index] / lines + " | ");
+}
+
+
+
+
+
+
+
