@@ -473,36 +473,145 @@
 
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
-Console.WriteLine("Введите количество столбцов: ");
+// Console.WriteLine("Введите количество столбцов: ");
+// int columns = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите количество строк: ");
+// int lines = int.Parse(Console.ReadLine());
+// Console.WriteLine();
+
+// float[] sums = new float[columns];
+// int[,] myArrayTab = new int[lines, columns];
+
+// for(int rowIndex = 0; rowIndex < myArrayTab.GetLength(0); rowIndex++)
+// {
+//     Console.Write("| "); 
+//     for(int columnIndex = 0; columnIndex < myArrayTab.GetLength(1); columnIndex++)
+//     {
+//         myArrayTab[rowIndex, columnIndex] = new Random().Next(0, 10);
+//         sums[columnIndex] += myArrayTab[rowIndex, columnIndex];
+//         Console.Write(myArrayTab[rowIndex, columnIndex] + " "); 
+//     }
+//     Console.WriteLine("|");
+// }
+// Console.WriteLine();
+
+// for(int index = 0; index < sums.Length; index++)
+// {
+//     Console.Write(" | " + sums[index] / lines + " | ");
+// }
+
+//Домашнее задание семинар 8//
+// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// В итоге получается вот такой массив:
+// 7 4 2 1
+// 9 5 3 2
+// 8 4 4 2
+Console.WriteLine("Введите ширину таблицы: ");
+int rows = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите длину таблицы: ");
 int columns = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите количество строк: ");
-int lines = int.Parse(Console.ReadLine());
 Console.WriteLine();
 
-float[] sums = new float[columns];
-int[,] myArrayTab = new int[lines, columns];
+int[,] array = GetArray(rows, columns, 0, 4);
+printArray(array);
+NumberIncrease(array);
+Console.WriteLine();
+printArray(array);
 
-for(int rowIndex = 0; rowIndex < myArrayTab.GetLength(0); rowIndex++)
+void printArray(int[,] array)
 {
-    Console.Write("| "); 
-    for(int columnIndex = 0; columnIndex < myArrayTab.GetLength(1); columnIndex++)
+    for(int i = 0; i < array.GetLength(0); i++)
     {
-        myArrayTab[rowIndex, columnIndex] = new Random().Next(0, 10);
-        sums[columnIndex] += myArrayTab[rowIndex, columnIndex];
-        Console.Write(myArrayTab[rowIndex, columnIndex] + " "); 
+        Console.WriteLine();
+        for(int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i,j]);
+        }    
     }
-    Console.WriteLine("|");
 }
 Console.WriteLine();
 
-for(int index = 0; index < sums.Length; index++)
+int[,] GetArray(int m, int n, int min, int max)
 {
-    Console.Write(" | " + sums[index] / lines + " | ");
+    int[,] result = new int [m, n];
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++)
+        {
+            result[i,j] = new Random().Next(min, max + 1);
+        }    
+        return result;
+    }
+
+}
+void NumberIncrease(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        Console.WriteLine();
+        for(int j = 0; j < array.GetLength(1); j++)
+        {
+            for(int k = 0; k < array.GetLength(1) - 1; k++)
+            {
+                if(array[i, k] < array[i, k + 1])
+                {
+                    int memory = array[i, k + 1];
+                    array[i, k + 1] = array[i, k];
+                    array[i, k] = memory;
+                }
+            }
+        }    
+    }
 }
 
 
+// Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// 5 2 6 7
+// Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
+// Задача 58: Задайте два двумерных массива (от 0 до 10). Напишите программу, которая будет находить произведение двух массивов (поэлементное).
+// Например, даны 2 массива:
+// 2 4
+// 3 2
 
+// 3 4
+// 3 3
+// Результирующая матрица будет:
+// 6 16
+// 9 6
 
+// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+// Массив размером 2 x 2 x 2
+// 66(0,0,0) 25(0,1,0)
+// 34(1,0,0) 41(1,1,0)
+// 27(0,0,1) 90(0,1,1)
+// 26(1,0,1) 55(1,1,1)
+
+// Доп.Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+// Например, на выходе получается вот такой массив:
+// 01 02 03 04
+// 12 13 14 05
+// 11 16 15 06
+// 10 09 08 07
+
+// Домашнее задание семинар 9//
+
+// Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. Выполнить с помощью рекурсии.
+
+// N = 5 -> "5, 4, 3, 2, 1"
+// N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+
+// Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+
+// M = 1; N = 15 -> 120
+// M = 4; N = 8. -> 30
 
