@@ -509,64 +509,63 @@
 // В итоге получается вот такой массив:
 // 7 4 2 1
 // 9 5 3 2
-// 8 4 4 2
-Console.WriteLine("Введите ширину таблицы: ");
-int rows = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите длину таблицы: ");
-int columns = int.Parse(Console.ReadLine());
-Console.WriteLine();
+// // 8 4 4 2
+// Console.WriteLine("Введите ширину таблицы: ");
+// int rows = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите длину таблицы: ");
+// int columns = int.Parse(Console.ReadLine());
+// Console.WriteLine();
 
-int[,] array = GetArray(rows, columns, 0, 4);
-printArray(array);
-NumberIncrease(array);
-Console.WriteLine();
-printArray(array);
+// int[,] array = GetArray(rows, columns, 0, 4);
+// printArray(array);
+// NumberIncrease(array);
+// Console.WriteLine();
+// printArray(array);
 
-void printArray(int[,] array)
-{
-    for(int i = 0; i < array.GetLength(0); i++)
-    {
-        Console.WriteLine();
-        for(int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i,j]);
-        }    
-    }
-}
-Console.WriteLine();
+// void printArray(int[,] array)
+// {
+//     for(int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.WriteLine();
+//         for(int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j]);
+//         }    
+//     }
+// }
+// Console.WriteLine();
 
-int[,] GetArray(int m, int n, int min, int max)
-{
-    int[,] result = new int [m, n];
-    for(int i = 0; i < m; i++)
-    {
-        for(int j = 0; j < n; j++)
-        {
-            result[i,j] = new Random().Next(min, max + 1);
-        }    
-        return result;
-    }
+// int[,] GetArray(int m, int n, int min, int max)
+// { 
+//     int[,] result = new int [m, n];
+//     for(int i = 0; i < m; i++)
+//     {
+//         for(int j = 0; j < n; j++)
+//         {
+//             result[i,j] = new Random().Next(min, max + 1);
+//         }    
+//     }
+//         return result;
 
-}
-void NumberIncrease(int[,] array)
-{
-    for(int i = 0; i < array.GetLength(0); i++)
-    {
-        Console.WriteLine();
-        for(int j = 0; j < array.GetLength(1); j++)
-        {
-            for(int k = 0; k < array.GetLength(1) - 1; k++)
-            {
-                if(array[i, k] < array[i, k + 1])
-                {
-                    int memory = array[i, k + 1];
-                    array[i, k + 1] = array[i, k];
-                    array[i, k] = memory;
-                }
-            }
-        }    
-    }
-}
+// }
+// void NumberIncrease(int[,] array)
+// {
+//     for(int i = 0; i < array.GetLength(0); i++)
+//     {
+//           for(int j = 0; j < array.GetLength(1); j++)
+//         {
+//             for(int k = 0; k < array.GetLength(1) - 1; k++)
+//             {
+//                 if(array[i, k] < array[i, k + 1])
+//                 {
+//                     int memory = array[i, k + 1];
+//                     array[i, k + 1] = array[i, k];
+//                     array[i, k] = memory;
+//                 }
+//             }
+//         }    
+//     }
+// }
 
 
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
@@ -577,6 +576,57 @@ void NumberIncrease(int[,] array)
 // 8 4 2 4
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
+
+int[,] array = GetRandom(4, 6);
+printArray(array);
+Console.WriteLine();
+
+
+void printArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        Console.WriteLine();
+        for(int j =  0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i,j] + " ");
+        }    
+    }
+}
+
+Console.WriteLine();
+
+int[,] GetRandom(int m, int n)
+{ 
+    int[,] result = new int [m, n];
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++)
+        {
+            result[i,j] = new Random().Next(0,10);
+        }    
+    }
+     return result;
+}
+
+int[] result = new int[2];
+result[0] = int.MaxValue;
+for(int i = 0; i < array.GetLength(0); i++)
+{
+    int sum = 0;
+    int j = 0;
+    for(; j < array.GetLength(1); j++)
+    {
+        sum = sum + array[i, j];
+    }
+
+    if (result[0] > sum)
+    {
+        result[0] = sum;
+        result[1] = i;
+    }
+}
+Console.WriteLine("Строка " + (result[1] + 1) + " с наименьшей суммой:  " + result[0]);
 
 // Задача 58: Задайте два двумерных массива (от 0 до 10). Напишите программу, которая будет находить произведение двух массивов (поэлементное).
 // Например, даны 2 массива:
@@ -601,7 +651,8 @@ void NumberIncrease(int[,] array)
 // 01 02 03 04
 // 12 13 14 05
 // 11 16 15 06
-// 10 09 08 07
+// 10 09 08 07\
+
 
 // Домашнее задание семинар 9//
 
